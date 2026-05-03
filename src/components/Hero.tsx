@@ -11,12 +11,12 @@ export function Hero() {
           Algiers Point
         </span>
       </h1>
-      <p style={{ fontSize: 14, lineHeight: 1.65, color: 'rgba(245,240,232,.6)', maxWidth: 360, animation: 'fadeInUp .5s cubic-bezier(.16,1,.3,1) .15s both' }}>
+      <p style={{ fontSize: 14, lineHeight: 1.65, color: 'rgba(var(--text-rgb),.6)', maxWidth: 360, animation: 'fadeInUp .5s cubic-bezier(.16,1,.3,1) .15s both' }}>
         New Orleans' second-oldest neighborhood, just a ferry ride from Canal Street. Stroll past Victorian cottages, grab a bite, and discover where jazz was born.
       </p>
-      <div style={{ marginTop: 16, display: 'inline-flex', alignItems: 'center', gap: 8, background: 'rgba(245,240,232,.06)', border: '1px solid rgba(245,240,232,.08)', borderRadius: 100, padding: '8px 16px', animation: 'fadeInUp .5s cubic-bezier(.16,1,.3,1) .22s both' }}>
+      <div style={{ marginTop: 16, display: 'inline-flex', alignItems: 'center', gap: 8, background: 'rgba(var(--text-rgb),.06)', border: '1px solid rgba(var(--text-rgb),.08)', borderRadius: 100, padding: '8px 16px', animation: 'fadeInUp .5s cubic-bezier(.16,1,.3,1) .22s both' }}>
         <span style={{ fontSize: 16 }}>&#x26F4;</span>
-        <span style={{ fontSize: 12, color: 'rgba(245,240,232,.7)' }}>Ferry every 30 min</span>
+        <span style={{ fontSize: 12, color: 'rgba(var(--text-rgb),.7)' }}>Ferry every 30 min</span>
       </div>
     </div>
   );

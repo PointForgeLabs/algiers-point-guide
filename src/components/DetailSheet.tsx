@@ -10,7 +10,7 @@ export function DetailSheet({ place, onClose }: Props) {
   const c = CATEGORY_COLORS[place.category];
 
   return (
-    <div onClick={onClose} style={{ position: 'fixed', inset: 0, zIndex: 1000, background: 'rgba(15,12,10,.85)', backdropFilter: 'blur(8px)', display: 'flex', alignItems: 'flex-end', justifyContent: 'center' }}>
+    <div onClick={onClose} style={{ position: 'fixed', inset: 0, zIndex: 1000, background: 'rgba(var(--bg-rgb),.85)', backdropFilter: 'blur(8px)', display: 'flex', alignItems: 'flex-end', justifyContent: 'center' }}>
       <div onClick={e => e.stopPropagation()} style={{ width: '100%', maxWidth: 480, background: c.bg, borderRadius: '24px 24px 0 0', maxHeight: '85vh', overflowY: 'auto', animation: 'slideUp .35s cubic-bezier(.16,1,.3,1)', position: 'relative' }}>
         {place.image_url && (
           <div style={{ width: '100%', height: 200, borderRadius: '24px 24px 0 0', overflow: 'hidden', position: 'relative' }}>

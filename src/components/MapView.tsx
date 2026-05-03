@@ -2,14 +2,16 @@ import { useEffect } from 'react';
 import { MapContainer, TileLayer, Marker, Tooltip, useMap } from 'react-leaflet';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
-import { CATEGORY_COLORS, MAP_CENTER, MAP_ZOOM, TILE_URL } from '../constants/categories';
+import { CATEGORY_COLORS, MAP_CENTER, MAP_ZOOM, TILE_URL_DARK, TILE_URL_LIGHT } from '../constants/categories';
 import type { Place, PlaceCategory } from '../types';
+import type { Theme } from '../hooks/useTheme';
 
-function categoryIcon(cat: PlaceCategory): L.DivIcon {
+function categoryIcon(cat: PlaceCategory, theme: Theme): L.DivIcon {
   const color = CATEGORY_COLORS[cat].marker;
+  const ring = theme === 'light' ? '#FFFFFF' : '#0F0C0A';
   return L.divIcon({
     className: '',
-    html: `<div style="width:13px;height:13px;border-radius:50%;background:${color};border:2.5px solid #0F0C0A;box-shadow:0 0 0 2px ${color}44,0 2px 8px rgba(0,0,0,.4);cursor:pointer"></div>`,
+    html: `<div style="width:13px;height:13px;border-radius:50%;background:${color};border:2.5px solid ${ring};box-shadow:0 0 0 2px ${color}44,0 2px 8px rgba(0,0,0,.4);cursor:pointer"></div>`,
     iconSize: [13, 13],
     iconAnchor: [7, 7],
   });
@@ -41,10 +43,12 @@ interface Props {
   places: Place[];
   activeCategory: string;
   onSelect: (place: Place) => void;
+  theme: Theme;
 }
 
-export function MapView({ places, activeCategory, onSelect }: Props) {
+export function MapView({ places, activeCategory, onSelect, theme }: Props) {
   const filtered = activeCategory === 'all' ? places : places.filter(p => p.category === activeCategory);
+  const tileUrl = theme === 'light' ? TILE_URL_LIGHT : TILE_URL_DARK;
 
   return (
     <MapContainer
@@ -54,7 +58,8 @@ export function MapView({ places, activeCategory, onSelect }: Props) {
       style={{ width: '100%', height: '100%' }}
     >
       <ResizeHandler />
-      <TileLayer url={TILE_URL} maxZoom={19} />
+      {/* key forces TileLayer to re-mount when theme flips so tiles swap immediately */}
+      <TileLayer key={theme} url={tileUrl} maxZoom={19} />
 
       {/* Ferry terminal marker */}
       <Marker position={[29.95309626074462, -90.05550878079588]} icon={ferryIcon}>
@@ -68,7 +73,7 @@ export function MapView({ places, activeCategory, onSelect }: Props) {
         <Marker
           key={place.id}
           position={[place.lat, place.lng]}
-          icon={categoryIcon(place.category)}
+          icon={categoryIcon(place.category, theme)}
           eventHandlers={{ click: () => onSelect(place) }}
         >
           <Tooltip direction="top" offset={[0, -10]}>{place.name}</Tooltip>

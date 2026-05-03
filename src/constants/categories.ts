@@ -25,4 +25,7 @@ export const COLORS = {
 
 export const MAP_CENTER = { lat: 29.9520, lng: -90.0520 };
 export const MAP_ZOOM = 16;
-export const TILE_URL = 'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png';
+export const TILE_URL_DARK = 'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png';
+export const TILE_URL_LIGHT = 'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png';
+// Legacy export kept for backward compat in case anything still imports it.
+export const TILE_URL = TILE_URL_DARK;
