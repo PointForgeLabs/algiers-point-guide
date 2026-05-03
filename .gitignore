@@ -26,3 +26,4 @@ dist-ssr
 
 # Claude Code per-user settings
 .claude/settings.local.json
+.claude/
