@@ -348,7 +348,7 @@
       "is_featured": false,
       "lat": 29.95291979416701,
       "lng": -90.05123235575807,
-      "image_url": "",
+      "image_url": "/images/places/confetti-park.jpg",
       "sort_order": 28
     },
     {
@@ -361,7 +361,7 @@
       "is_featured": false,
       "lat": 29.9511015351186,
       "lng": -90.05166278608007,
-      "image_url": "",
+      "image_url": "/images/places/mcdonogh-memorial-park.jpg",
       "sort_order": 29
     },
     {
@@ -374,7 +374,7 @@
       "is_featured": false,
       "lat": 29.949301290458337,
       "lng": -90.05087119886957,
-      "image_url": "",
+      "image_url": "/images/places/delcazal-playground.jpg",
       "sort_order": 30
     },
     {
@@ -387,7 +387,7 @@
       "is_featured": false,
       "lat": 29.94854567608526,
       "lng": -90.05043091441871,
-      "image_url": "",
+      "image_url": "/images/places/opelousas-point-supermarket.jpg",
       "sort_order": 31
     },
     {
@@ -400,7 +400,7 @@
       "is_featured": false,
       "lat": 29.95083570328419,
       "lng": -90.0511152436272,
-      "image_url": "",
+      "image_url": "/images/places/faubourgh-fresh-market.jpg",
       "sort_order": 32
     },
     {
@@ -413,7 +413,7 @@
       "is_featured": false,
       "lat": 29.95083570328419,
       "lng": -90.0511152436272,
-      "image_url": "",
+      "image_url": "/images/places/beatrixbell-handcrafted-jewelry.jpg",
       "sort_order": 33
     }
   ]
