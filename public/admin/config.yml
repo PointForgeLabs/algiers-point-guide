@@ -1,6 +1,5 @@
 backend:
-  name: github
-  repo: PointForgeLabs/algiers-point-guide
+  name: git-gateway
   branch: master
 
 media_folder: public/images
