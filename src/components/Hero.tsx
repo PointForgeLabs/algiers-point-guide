@@ -16,7 +16,7 @@ export function Hero() {
       </p>
       <div style={{ marginTop: 16, display: 'inline-flex', alignItems: 'center', gap: 8, background: 'rgba(245,240,232,.06)', border: '1px solid rgba(245,240,232,.08)', borderRadius: 100, padding: '8px 16px', animation: 'fadeInUp .5s cubic-bezier(.16,1,.3,1) .22s both' }}>
         <span style={{ fontSize: 16 }}>&#x26F4;</span>
-        <span style={{ fontSize: 12, color: 'rgba(245,240,232,.7)' }}>Ferry every 30 min &middot; Free with RTA Le Pass</span>
+        <span style={{ fontSize: 12, color: 'rgba(245,240,232,.7)' }}>Ferry every 30 min</span>
       </div>
     </div>
   );
