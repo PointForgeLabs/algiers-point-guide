@@ -1,7 +1,7 @@
 {
   "body": [
     {
-      "walk_time": "1 min",
+      "walk_time": "2 min",
       "is_featured": false,
       "lng": -90.05457,
       "image_url": "/images/places/nighthawk-napoletana.jpg",
@@ -14,7 +14,7 @@
       "lat": 29.95217
     },
     {
-      "walk_time": "4 min",
+      "walk_time": "8 min",
       "is_featured": false,
       "lng": -90.05111,
       "image_url": "/images/places/tout-de-suite-cafe.jpg",
@@ -27,7 +27,7 @@
       "lat": 29.95209
     },
     {
-      "walk_time": "5 min",
+      "walk_time": "4 min",
       "is_featured": false,
       "lng": -90.05344795758592,
       "image_url": "/images/places/congregation-coffee.jpg",
@@ -40,7 +40,7 @@
       "lat": 29.951908999405727
     },
     {
-      "walk_time": "6 min",
+      "walk_time": "7 min",
       "is_featured": false,
       "lng": -90.05137,
       "image_url": "/images/places/barracuda.jpg",
@@ -53,7 +53,7 @@
       "lat": 29.95328
     },
     {
-      "walk_time": "5 min",
+      "walk_time": "10 min",
       "is_featured": false,
       "lng": -90.05019,
       "image_url": "/images/places/the-old-point-bar.jpg",
@@ -79,7 +79,7 @@
       "lat": 29.95149
     },
     {
-      "walk_time": "6 min",
+      "walk_time": "10 min",
       "is_featured": false,
       "lng": -90.05186050352673,
       "image_url": "/images/places/the-little-house.jpg",
@@ -92,7 +92,7 @@
       "lat": 29.94916
     },
     {
-      "walk_time": "7 min",
+      "walk_time": "2 min",
       "is_featured": false,
       "lng": -90.05457,
       "image_url": "/images/places/rice-vice.jpg",
@@ -105,7 +105,7 @@
       "lat": 29.95217
     },
     {
-      "walk_time": "1 min",
+      "walk_time": "2 min",
       "is_featured": true,
       "lng": -90.05471,
       "image_url": "/images/places/dry-dock-cafe.jpg",
@@ -118,7 +118,7 @@
       "lat": 29.95204
     },
     {
-      "walk_time": "5 min",
+      "walk_time": "11 min",
       "is_featured": false,
       "lng": -90.04895,
       "image_url": "/images/places/appetite-repair-shop.jpg",
@@ -131,7 +131,7 @@
       "lat": 29.95199
     },
     {
-      "walk_time": "5 min",
+      "walk_time": "8 min",
       "is_featured": false,
       "lng": -90.05362,
       "image_url": "/images/places/bargeboard-mercantile-millshop.jpg",
@@ -144,7 +144,7 @@
       "lat": 29.94941
     },
     {
-      "walk_time": "6 min",
+      "walk_time": "12 min",
       "is_featured": false,
       "lng": -90.04897164830093,
       "image_url": "/images/places/rosetree-blown-glass-studio.jpg",
@@ -157,7 +157,7 @@
       "lat": 29.951093659962954
     },
     {
-      "walk_time": "0 min",
+      "walk_time": "1 min",
       "is_featured": true,
       "lng": -90.05519,
       "image_url": "/images/places/jazz-walk-of-fame.jpg",
@@ -170,7 +170,7 @@
       "lat": 29.952394893229133
     },
     {
-      "walk_time": "2 min",
+      "walk_time": "3 min",
       "is_featured": false,
       "lng": -90.05408,
       "image_url": "/images/places/algiers-courthouse.jpg",
@@ -183,7 +183,7 @@
       "lat": 29.95369
     },
     {
-      "walk_time": "0 min",
+      "walk_time": "1 min",
       "is_featured": false,
       "lng": -90.055,
       "image_url": "/images/places/historical-levee-plaques.jpg",
@@ -196,7 +196,7 @@
       "lat": 29.9536
     },
     {
-      "walk_time": "10 min",
+      "walk_time": "23 min",
       "is_featured": false,
       "lng": -90.04165463214376,
       "image_url": "/images/places/folk-art-zone-blues-museum.jpg",
@@ -209,7 +209,7 @@
       "lat": 29.954067820958535
     },
     {
-      "walk_time": "5 min",
+      "walk_time": "9 min",
       "is_featured": false,
       "lng": -90.05051,
       "image_url": "/images/places/holy-name-of-mary-church.jpg",
@@ -222,7 +222,7 @@
       "lat": 29.95185
     },
     {
-      "walk_time": "4 min",
+      "walk_time": "10 min",
       "is_featured": false,
       "lng": -90.04996,
       "image_url": "",
@@ -235,7 +235,7 @@
       "lat": 29.95432
     },
     {
-      "walk_time": "7 min",
+      "walk_time": "11 min",
       "is_featured": false,
       "lng": -90.04967,
       "image_url": "/images/places/trinity-lutheran-church.jpg",
@@ -248,7 +248,7 @@
       "lat": 29.951
     },
     {
-      "walk_time": "9 min",
+      "walk_time": "15 min",
       "is_featured": false,
       "lng": -90.04848,
       "image_url": "/images/places/martin-behrman-school.jpg",
@@ -261,7 +261,7 @@
       "lat": 29.94822
     },
     {
-      "walk_time": "8 min",
+      "walk_time": "12 min",
       "is_featured": false,
       "lng": -90.04821,
       "image_url": "/images/places/hubbell-library.jpg",
@@ -274,7 +274,7 @@
       "lat": 29.95308
     },
     {
-      "walk_time": "8 min",
+      "walk_time": "18 min",
       "is_featured": false,
       "lng": -90.04601,
       "image_url": "",
@@ -287,7 +287,7 @@
       "lat": 29.94884
     },
     {
-      "walk_time": "4 min",
+      "walk_time": "6 min",
       "is_featured": false,
       "lng": -90.05270542894104,
       "image_url": "/images/places/nomad-used-book-store.jpg",
@@ -300,7 +300,7 @@
       "lat": 29.950844410099332
     },
     {
-      "walk_time": "7 min",
+      "walk_time": "24 min",
       "is_featured": false,
       "lng": -90.04143,
       "image_url": "/images/places/river-find-foods.jpg",
@@ -313,7 +313,7 @@
       "lat": 29.95401
     },
     {
-      "walk_time": "4 min",
+      "walk_time": "9 min",
       "is_featured": false,
       "lng": -90.05098157054074,
       "image_url": "/images/places/the-vault-nola.jpg",
@@ -326,7 +326,7 @@
       "lat": 29.9505679584007
     },
     {
-      "walk_time": "3 min",
+      "walk_time": "7 min",
       "is_featured": false,
       "lng": -90.05120712173468,
       "image_url": "/images/places/drift-inn-diner.jpg",
@@ -344,7 +344,7 @@
       "type": "Park",
       "address": "Algiers Point",
       "description": "Whimsical community park known for its colorful playground and family-friendly atmosphere. Hosts the Confetti Kids storytelling and music programs.",
-      "walk_time": "4 min",
+      "walk_time": "7 min",
       "is_featured": false,
       "lat": 29.95291979416701,
       "lng": -90.05123235575807,
@@ -355,9 +355,9 @@
       "name": "McDonogh Memorial Park",
       "category": "community",
       "type": "Park",
-      "address": "Alix St, Algiers Point",
+      "address": "Algiers Point",
       "description": "Public park honoring John McDonogh; a quiet pocket of green space in the heart of Algiers Point.",
-      "walk_time": "6 min",
+      "walk_time": "8 min",
       "is_featured": false,
       "lat": 29.95161258359743,
       "lng": -90.05125292550599,
@@ -370,7 +370,7 @@
       "type": "Playground",
       "address": "Algiers Point",
       "description": "Neighborhood playground at the south end of Algiers Point.",
-      "walk_time": "7 min",
+      "walk_time": "11 min",
       "is_featured": false,
       "lat": 29.949301290458337,
       "lng": -90.05087119886957,
@@ -383,7 +383,7 @@
       "type": "Grocery",
       "address": "Algiers Point",
       "description": "Local grocery serving Algiers Point — staples, snacks, and quick essentials.",
-      "walk_time": "9 min",
+      "walk_time": "12 min",
       "is_featured": false,
       "lat": 29.94854567608526,
       "lng": -90.05043091441871,
@@ -396,7 +396,7 @@
       "type": "Market",
       "address": "Algiers Point",
       "description": "Fresh market in Algiers Point — produce, prepared foods, and pantry staples.",
-      "walk_time": "6 min",
+      "walk_time": "9 min",
       "is_featured": false,
       "lat": 29.95083570328419,
       "lng": -90.0511152436272,
@@ -407,9 +407,9 @@
       "name": "Beatrixbell Handcrafted Jewelry",
       "category": "shop",
       "type": "Jewelry",
-      "address": "109 Lavergne St, Algiers Point",
+      "address": "Algiers Point",
       "description": "Handcrafted jewelry studio and shop in Algiers Point.",
-      "walk_time": "6 min",
+      "walk_time": "5 min",
       "is_featured": false,
       "lat": 29.95453010100002,
       "lng": -90.05285492861353,
@@ -422,7 +422,7 @@
       "type": "Church",
       "address": "Algiers Point",
       "description": "Historic Episcopal church in Algiers Point.",
-      "walk_time": "4 min",
+      "walk_time": "9 min",
       "is_featured": false,
       "lat": 29.953397322499217,
       "lng": -90.05036977540588,
@@ -433,9 +433,9 @@
       "name": "Pelican Gardens",
       "category": "community",
       "type": "Garden",
-      "address": "310 Wagner St, Algiers Point",
+      "address": "Algiers Point",
       "description": "Community garden / green space along Wagner Street.",
-      "walk_time": "8 min",
+      "walk_time": "27 min",
       "is_featured": false,
       "lat": 29.95254426108015,
       "lng": -90.03911483796635,
@@ -446,9 +446,9 @@
       "name": "Compass Point Events",
       "category": "community",
       "type": "Event Venue",
-      "address": "705 Brooklyn Ave, Algiers Point",
+      "address": "Algiers Point",
       "description": "Event venue near the levee at the south end of Algiers Point.",
-      "walk_time": "9 min",
+      "walk_time": "10 min",
       "is_featured": false,
       "lat": 29.948409991449452,
       "lng": -90.05372607555624,
@@ -459,9 +459,9 @@
       "name": "Algiers United Methodist Church",
       "category": "architecture",
       "type": "Church",
-      "address": "725 Vallette St, Algiers Point",
+      "address": "Algiers Point",
       "description": "United Methodist church serving the Algiers Point community.",
-      "walk_time": "8 min",
+      "walk_time": "13 min",
       "is_featured": false,
       "lat": 29.94832274623693,
       "lng": -90.0496582247104,
