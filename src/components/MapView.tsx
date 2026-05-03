@@ -22,11 +22,17 @@ const ferryIcon = L.divIcon({
   iconAnchor: [14, 14],
 });
 
-// Force Leaflet to recalculate size after mount
+// Keep Leaflet's internal size in sync with its container.
+// A one-shot invalidateSize() on mount races browser layout — the parent
+// flexbox often hasn't finalized when it fires, so Leaflet reads the wrong
+// dimensions and renders only one tile with markers stacked in the corner.
 function ResizeHandler() {
   const map = useMap();
   useEffect(() => {
-    setTimeout(() => map.invalidateSize(), 100);
+    const container = map.getContainer();
+    const observer = new ResizeObserver(() => map.invalidateSize());
+    observer.observe(container);
+    return () => observer.disconnect();
   }, [map]);
   return null;
 }
