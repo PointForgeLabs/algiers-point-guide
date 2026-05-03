@@ -29,7 +29,7 @@
     {
       "walk_time": "5 min",
       "is_featured": false,
-      "lng": -90.05313,
+      "lng": -90.05344795758592,
       "image_url": "/images/places/congregation-coffee.jpg",
       "name": "Congregation Coffee",
       "sort_order": 3,
@@ -37,7 +37,7 @@
       "type": "Coffee",
       "description": "New Orleans-based roaster with a cafe that feels like the neighborhood's living room. Great espresso and pastries.",
       "category": "eat",
-      "lat": 29.95208
+      "lat": 29.951908999405727
     },
     {
       "walk_time": "6 min",
@@ -146,7 +146,7 @@
     {
       "walk_time": "6 min",
       "is_featured": false,
-      "lng": -90.05089,
+      "lng": -90.04897164830093,
       "image_url": "/images/places/rosetree-blown-glass-studio.jpg",
       "name": "Rosetree Blown Glass Studio",
       "sort_order": 13,
@@ -154,7 +154,7 @@
       "type": "Glass Art Gallery",
       "description": "Artist Mark Rosenbaum's studio in a restored 1930s art deco theater. Watch glass being blown and 'blow your own' on select days.",
       "category": "shop",
-      "lat": 29.95043
+      "lat": 29.951093659962954
     },
     {
       "walk_time": "0 min",
@@ -198,7 +198,7 @@
     {
       "walk_time": "10 min",
       "is_featured": false,
-      "lng": -90.04422,
+      "lng": -90.04165463214376,
       "image_url": "/images/places/folk-art-zone-blues-museum.jpg",
       "name": "Folk Art Zone & Blues Museum",
       "sort_order": 17,
@@ -206,7 +206,7 @@
       "type": "Art & Museum",
       "description": "Home of self-taught artist Charles Gillam. A colorful outdoor gallery and museum celebrating folk art and blues heritage.",
       "category": "history",
-      "lat": 29.95405
+      "lat": 29.954067820958535
     },
     {
       "walk_time": "5 min",
@@ -328,7 +328,7 @@
     {
       "walk_time": "3 min",
       "is_featured": false,
-      "lng": -90.05156,
+      "lng": -90.05120712173468,
       "image_url": "/images/places/drift-inn-diner.jpg",
       "name": "Drift Inn Diner",
       "sort_order": 27,
@@ -336,7 +336,7 @@
       "type": "Diner",
       "description": "Classic neighborhood diner in Algiers Point.",
       "category": "eat",
-      "lat": 29.95282
+      "lat": 29.95263719905331
     }
   ]
 }
