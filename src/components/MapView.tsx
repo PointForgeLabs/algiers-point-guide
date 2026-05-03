@@ -57,7 +57,7 @@ export function MapView({ places, activeCategory, onSelect }: Props) {
       <TileLayer url={TILE_URL} maxZoom={19} />
 
       {/* Ferry terminal marker */}
-      <Marker position={[29.95398, -90.05450]} icon={ferryIcon}>
+      <Marker position={[29.95225, -90.05404]} icon={ferryIcon}>
         <Tooltip direction="top" offset={[0, -10]}>
           <b>Ferry Terminal</b><br />You are here!
         </Tooltip>

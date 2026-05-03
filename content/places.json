@@ -40,19 +40,6 @@
       "sort_order": 3
     },
     {
-      "name": "Plume Algiers",
-      "category": "eat",
-      "type": "Indian",
-      "address": "1113 Teche St",
-      "description": "Modern Indian cuisine from a chef with a fine dining background. Kaathi rolls, tandoori chicken, and creative cocktails in an intimate setting.",
-      "walk_time": "7 min",
-      "is_featured": false,
-      "lat": 29.94404,
-      "lng": -90.05224,
-      "image_url": "",
-      "sort_order": 4
-    },
-    {
       "name": "Barracuda",
       "category": "eat",
       "type": "Tacos",
@@ -108,12 +95,12 @@
       "name": "Rice Vice",
       "category": "eat",
       "type": "Sake Bar",
-      "address": "712 Pelican Ave",
+      "address": "141 Delaronde St (shared with Nighthawk)",
       "description": "Intimate sake and cocktail bar. Reservations recommended for this unique neighborhood gem.",
       "walk_time": "7 min",
       "is_featured": false,
-      "lat": 29.95346,
-      "lng": -90.04855,
+      "lat": 29.95217,
+      "lng": -90.05457,
       "image_url": "",
       "sort_order": 9
     },
@@ -138,8 +125,8 @@
       "description": "Legendary neighborhood pop-up. Follow the Facebook group for the rotating menu. Venmo only. A true hidden gem.",
       "walk_time": "5 min",
       "is_featured": false,
-      "lat": 29.95205,
-      "lng": -90.0521,
+      "lat": 29.95189,
+      "lng": -90.05125,
       "image_url": "",
       "sort_order": 11
     },
@@ -177,8 +164,8 @@
       "description": "Begins with a bronze statue of Louis Armstrong right off the ferry. Lampposts along the levee honor jazz legends like Sidney Bechet, Papa Celestin, and the Boswell Sisters.",
       "walk_time": "0 min",
       "is_featured": true,
-      "lat": 29.95398,
-      "lng": -90.0545,
+      "lat": 29.95232,
+      "lng": -90.05549,
       "image_url": "",
       "sort_order": 14
     },
@@ -216,8 +203,8 @@
       "description": "Home of self-taught artist Charles Gillam. A colorful outdoor gallery and museum celebrating folk art and blues heritage.",
       "walk_time": "10 min",
       "is_featured": false,
-      "lat": 29.949,
-      "lng": -90.054,
+      "lat": 29.95405,
+      "lng": -90.04422,
       "image_url": "",
       "sort_order": 17
     },
@@ -298,6 +285,58 @@
       "lng": -90.04601,
       "image_url": "",
       "sort_order": 23
+    },
+    {
+      "name": "Nomad Used Book Store",
+      "category": "shop",
+      "type": "Bookstore",
+      "address": "Algiers Point",
+      "description": "Used book store in Algiers Point. Browse a curated selection of fiction, nonfiction, and local interest titles.",
+      "walk_time": "4 min",
+      "is_featured": false,
+      "lat": 29.95125,
+      "lng": -90.05308,
+      "image_url": "",
+      "sort_order": 24
+    },
+    {
+      "name": "River Find Foods",
+      "category": "eat",
+      "type": "Market",
+      "address": "Algiers Point",
+      "description": "Local market and food spot near the levee.",
+      "walk_time": "7 min",
+      "is_featured": false,
+      "lat": 29.95401,
+      "lng": -90.04143,
+      "image_url": "",
+      "sort_order": 25
+    },
+    {
+      "name": "The Vault NOLA",
+      "category": "eat",
+      "type": "Upscale Creole",
+      "address": "Algiers Point",
+      "description": "Upscale New Orleans cuisine inside the restored 1921 Algiers Trust and Savings Bank. The original bank vault still anchors the dining room. The Wright family has preserved authentic 1970s bank equipment alongside contemporary Creole cooking. A rare combination of architectural history and serious food, minutes from the ferry.",
+      "walk_time": "4 min",
+      "is_featured": false,
+      "lat": 29.95128,
+      "lng": -90.05056,
+      "image_url": "",
+      "sort_order": 26
+    },
+    {
+      "name": "Drift Inn Diner",
+      "category": "eat",
+      "type": "Diner",
+      "address": "Algiers Point",
+      "description": "Classic neighborhood diner in Algiers Point.",
+      "walk_time": "3 min",
+      "is_featured": false,
+      "lat": 29.95282,
+      "lng": -90.05156,
+      "image_url": "",
+      "sort_order": 27
     }
   ]
 }
