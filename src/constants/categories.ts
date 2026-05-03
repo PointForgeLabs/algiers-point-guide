@@ -5,6 +5,7 @@ export const CATEGORY_COLORS: Record<PlaceCategory, { bg: string; accent: string
   shop: { bg: '#4A2D3E', accent: '#E87B6B', marker: '#E87B6B' },
   history: { bg: '#2D3A4A', accent: '#6BB8E8', marker: '#6BB8E8' },
   architecture: { bg: '#4A3A2D', accent: '#C49A6C', marker: '#C49A6C' },
+  community: { bg: '#3E2D4A', accent: '#B485E8', marker: '#B485E8' },
 };
 
 export const CATEGORIES = [
@@ -13,6 +14,7 @@ export const CATEGORIES = [
   { id: 'shop' as const, label: 'Shops', icon: '\u25C6' },
   { id: 'history' as const, label: 'History', icon: '\u25A0' },
   { id: 'architecture' as const, label: 'Architecture', icon: '\u25A0' },
+  { id: 'community' as const, label: 'Community', icon: '\u25A0' },
 ] as const;
 
 export const COLORS = {

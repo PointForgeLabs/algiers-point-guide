@@ -19,7 +19,7 @@ collections:
             widget: list
             fields:
               - { name: name, label: Name, widget: string }
-              - { name: category, label: Category, widget: select, options: ['eat', 'shop', 'history', 'architecture'] }
+              - { name: category, label: Category, widget: select, options: ['eat', 'shop', 'history', 'architecture', 'community'] }
               - { name: type, label: Type / Style, widget: string, hint: "e.g. Pizza, Tudor Gothic, Coffee" }
               - { name: address, label: Address, widget: string }
               - { name: description, label: Description, widget: text }

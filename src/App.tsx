@@ -27,7 +27,7 @@ export default function App() {
 
   const filtered = activeCategory === 'all' ? places : places.filter(p => p.category === activeCategory);
   const catCounts: Record<string, number> = { all: places.length };
-  (['eat', 'shop', 'history', 'architecture'] as PlaceCategory[]).forEach(c => {
+  (['eat', 'shop', 'history', 'architecture', 'community'] as PlaceCategory[]).forEach(c => {
     catCounts[c] = places.filter(p => p.category === c).length;
   });
 
@@ -112,6 +112,8 @@ export default function App() {
                   {places.filter(p => p.category === 'history' && !p.is_featured).map((p, i) => <PlaceCard key={p.id} place={p} index={i + 14} onClick={() => setSelectedPlace(p)} />)}
                   <SectionHeader label="Architecture" sub={`${catCounts.architecture} spots`} color="#C49A6C" />
                   {places.filter(p => p.category === 'architecture').map((p, i) => <PlaceCard key={p.id} place={p} index={i + 18} onClick={() => setSelectedPlace(p)} />)}
+                  <SectionHeader label="Community" sub={`${catCounts.community} spots`} color="#B485E8" />
+                  {places.filter(p => p.category === 'community').map((p, i) => <PlaceCard key={p.id} place={p} index={i + 24} onClick={() => setSelectedPlace(p)} />)}
                 </>) : (
                   filtered.map((p, i) => <PlaceCard key={p.id} place={p} index={i} onClick={() => setSelectedPlace(p)} />)
                 )}
