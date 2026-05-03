@@ -1,4 +1,5 @@
-import { MapContainer, TileLayer, Marker, Tooltip } from 'react-leaflet';
+import { useEffect } from 'react';
+import { MapContainer, TileLayer, Marker, Tooltip, useMap } from 'react-leaflet';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import { CATEGORY_COLORS, MAP_CENTER, MAP_ZOOM, TILE_URL } from '../constants/categories';
@@ -21,6 +22,15 @@ const ferryIcon = L.divIcon({
   iconAnchor: [14, 14],
 });
 
+// Force Leaflet to recalculate size after mount
+function ResizeHandler() {
+  const map = useMap();
+  useEffect(() => {
+    setTimeout(() => map.invalidateSize(), 100);
+  }, [map]);
+  return null;
+}
+
 interface Props {
   places: Place[];
   activeCategory: string;
@@ -37,6 +47,7 @@ export function MapView({ places, activeCategory, onSelect }: Props) {
       zoomControl={false}
       style={{ width: '100%', height: '100%' }}
     >
+      <ResizeHandler />
       <TileLayer url={TILE_URL} maxZoom={19} />
 
       {/* Ferry terminal marker */}
