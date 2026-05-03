@@ -23,6 +23,6 @@ export const COLORS = {
   muted: 'rgba(245, 240, 232, 0.55)',
 } as const;
 
-export const MAP_CENTER = { lat: 29.9512, lng: -90.0580 };
+export const MAP_CENTER = { lat: 29.9520, lng: -90.0520 };
 export const MAP_ZOOM = 16;
 export const TILE_URL = 'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png';
