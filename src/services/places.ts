@@ -1,57 +1,26 @@
-import { supabase, isConfigured } from './supabase';
-import { DEFAULT_PLACES } from '../constants/defaults';
-import type { Place, PlaceInsert, PlaceUpdate } from '../types';
+import placesData from '../../content/places.json';
+import type { Place, PlaceCategory } from '../types';
 
-export async function fetchPlaces(): Promise<Place[]> {
-  if (!isConfigured) {
-    // Return default places when Supabase is not configured
-    return DEFAULT_PLACES.map((p, i) => ({
-      ...p,
-      id: `default-${i}`,
+export function getPlaces(): Place[] {
+  const items = (placesData as { body: Array<Record<string, unknown>> }).body;
+
+  return items
+    .sort((a, b) => (a.sort_order as number) - (b.sort_order as number))
+    .map((p, i) => ({
+      id: `p${i + 1}`,
+      name: p.name as string,
+      category: p.category as PlaceCategory,
+      type: p.type as string,
+      address: p.address as string,
+      description: p.description as string,
+      walk_time: p.walk_time as string,
+      lat: p.lat as number,
+      lng: p.lng as number,
+      image_url: (p.image_url as string) || '',
+      is_featured: (p.is_featured as boolean) || false,
+      sort_order: p.sort_order as number,
       is_active: true,
-      created_at: new Date().toISOString(),
-      updated_at: new Date().toISOString(),
+      created_at: '',
+      updated_at: '',
     }));
-  }
-
-  const { data, error } = await supabase
-    .from('places')
-    .select('*')
-    .order('sort_order', { ascending: true })
-    .order('name', { ascending: true });
-
-  if (error) throw error;
-  return data;
-}
-
-export async function createPlace(place: PlaceInsert): Promise<Place> {
-  const { data, error } = await supabase
-    .from('places')
-    .insert(place)
-    .select()
-    .single();
-
-  if (error) throw error;
-  return data;
-}
-
-export async function updatePlace(id: string, updates: PlaceUpdate): Promise<Place> {
-  const { data, error } = await supabase
-    .from('places')
-    .update(updates)
-    .eq('id', id)
-    .select()
-    .single();
-
-  if (error) throw error;
-  return data;
-}
-
-export async function deletePlace(id: string): Promise<void> {
-  const { error } = await supabase
-    .from('places')
-    .update({ is_active: false })
-    .eq('id', id);
-
-  if (error) throw error;
 }

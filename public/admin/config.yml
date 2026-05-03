@@ -1,0 +1,32 @@
+backend:
+  name: github
+  repo: PointForgeLabs/algiers-point-guide
+  branch: master
+
+media_folder: public/images
+public_folder: /images
+
+collections:
+  - name: data
+    label: Site Data
+    files:
+      - name: places
+        label: Places
+        file: content/places.json
+        format: json
+        fields:
+          - name: body
+            label: Places
+            widget: list
+            fields:
+              - { name: name, label: Name, widget: string }
+              - { name: category, label: Category, widget: select, options: ['eat', 'shop', 'history', 'architecture'] }
+              - { name: type, label: Type / Style, widget: string, hint: "e.g. Pizza, Tudor Gothic, Coffee" }
+              - { name: address, label: Address, widget: string }
+              - { name: description, label: Description, widget: text }
+              - { name: walk_time, label: Walk from Ferry, widget: string, hint: "e.g. 5 min" }
+              - { name: lat, label: Latitude, widget: number, value_type: float, step: 0.0001 }
+              - { name: lng, label: Longitude, widget: number, value_type: float, step: 0.0001 }
+              - { name: image_url, label: Image URL, widget: string, required: false, default: "" }
+              - { name: is_featured, label: Featured (Start Here), widget: boolean, default: false }
+              - { name: sort_order, label: Sort Order, widget: number, value_type: int, default: 0 }
