@@ -1,13 +1,20 @@
 import { useState } from 'react';
 import { usePlaces } from './hooks/usePlaces';
+import { useTours } from './hooks/useTours';
 import { useTheme } from './hooks/useTheme';
+import { useActiveTour } from './hooks/useActiveTour';
 import { Hero } from './components/Hero';
 import { CategoryStrip } from './components/CategoryStrip';
 import { PlaceCard } from './components/PlaceCard';
 import { DetailSheet } from './components/DetailSheet';
 import { MapView } from './components/MapView';
+import { TourList } from './components/TourList';
+import { TourDetail } from './components/TourDetail';
+import { TourPlayer } from './components/TourPlayer';
 import { CATEGORY_COLORS } from './constants/categories';
-import type { Place, PlaceCategory } from './types';
+import type { Place, PlaceCategory, Tour } from './types';
+
+type View = 'list' | 'tours' | 'map';
 
 function SectionHeader({ label, sub, color }: { label: string; sub?: string; color?: string }) {
   return (
@@ -20,16 +27,25 @@ function SectionHeader({ label, sub, color }: { label: string; sub?: string; col
 
 export default function App() {
   const { places } = usePlaces();
+  const { tours } = useTours();
   const { theme, toggle } = useTheme();
+  const activeTour = useActiveTour();
   const [activeCategory, setActiveCategory] = useState<'all' | PlaceCategory>('all');
   const [selectedPlace, setSelectedPlace] = useState<Place | null>(null);
-  const [view, setView] = useState<'list' | 'map'>('list');
+  const [previewTour, setPreviewTour] = useState<Tour | null>(null);
+  const [view, setView] = useState<View>('list');
 
   const filtered = activeCategory === 'all' ? places : places.filter(p => p.category === activeCategory);
   const catCounts: Record<string, number> = { all: places.length };
   (['eat', 'shop', 'history', 'architecture', 'community'] as PlaceCategory[]).forEach(c => {
     catCounts[c] = places.filter(p => p.category === c).length;
   });
+
+  const startTour = (t: Tour) => {
+    activeTour.start(t);
+    setPreviewTour(null);
+    setView('map');
+  };
 
   return (
     <>
@@ -62,9 +78,13 @@ export default function App() {
         <div style={{ flexShrink: 0, background: 'rgba(var(--bg-rgb),.95)', backdropFilter: 'blur(12px)', borderBottom: '1px solid rgba(var(--text-rgb),.06)', padding: '12px 20px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', zIndex: 50 }}>
           <div style={{ fontFamily: "'Playfair Display',serif", fontSize: 17, fontWeight: 700 }}>Algiers Point</div>
           <div style={{ display: 'flex', gap: 4, alignItems: 'center' }}>
-            {(['list', 'map'] as const).map(v => (
-              <button key={v} onClick={() => setView(v)} style={{ background: view === v ? 'rgba(var(--text-rgb),.12)' : 'transparent', border: 'none', color: view === v ? 'var(--text)' : 'rgba(var(--text-rgb),.35)', padding: '6px 14px', borderRadius: 8, cursor: 'pointer', fontSize: 13, fontWeight: 600, fontFamily: "'DM Sans',sans-serif", transition: 'all .2s' }}>
-                {v === 'list' ? 'Guide' : 'Map'}
+            {(['list', 'tours', 'map'] as const).map(v => (
+              <button
+                key={v}
+                onClick={() => { setView(v); if (v !== 'tours') setPreviewTour(null); }}
+                style={{ background: view === v ? 'rgba(var(--text-rgb),.12)' : 'transparent', border: 'none', color: view === v ? 'var(--text)' : 'rgba(var(--text-rgb),.35)', padding: '6px 14px', borderRadius: 8, cursor: 'pointer', fontSize: 13, fontWeight: 600, fontFamily: "'DM Sans',sans-serif", transition: 'all .2s' }}
+              >
+                {v === 'list' ? 'Guide' : v === 'tours' ? 'Tours' : 'Map'}
               </button>
             ))}
             <button
@@ -78,24 +98,42 @@ export default function App() {
           </div>
         </div>
 
-        <CategoryStrip active={activeCategory} onChange={setActiveCategory} counts={catCounts} />
+        {view === 'list' && <CategoryStrip active={activeCategory} onChange={setActiveCategory} counts={catCounts} />}
 
         {/* Content */}
         <div style={{ flex: 1, overflow: 'hidden', position: 'relative' }}>
           {view === 'map' ? (
             <div style={{ width: '100%', height: '100%', position: 'relative' }}>
-              <MapView places={places} activeCategory={activeCategory} onSelect={setSelectedPlace} theme={theme} />
-              <div style={{ position: 'absolute', bottom: 20, left: 20, right: 20, background: 'rgba(var(--bg-rgb),.85)', backdropFilter: 'blur(8px)', borderRadius: 12, padding: '12px 16px', border: '1px solid rgba(var(--text-rgb),.08)' }}>
-                <div style={{ fontSize: 11, color: 'rgba(var(--text-rgb),.5)', marginBottom: 4 }}>Tap a marker for details</div>
-                <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }}>
-                  {Object.entries(CATEGORY_COLORS).map(([k, v]) => (
-                    <div key={k} style={{ display: 'flex', alignItems: 'center', gap: 5 }}>
-                      <div style={{ width: 8, height: 8, borderRadius: 4, background: v.marker }} />
-                      <span style={{ fontSize: 11, color: 'rgba(var(--text-rgb),.6)', textTransform: 'capitalize' }}>{k === 'eat' ? 'Eat & Drink' : k}</span>
-                    </div>
-                  ))}
+              <MapView
+                places={places}
+                activeCategory={activeCategory}
+                onSelect={setSelectedPlace}
+                theme={theme}
+                activeTour={activeTour.tour}
+                activeStopIndex={activeTour.stopIndex}
+                onStopSelect={activeTour.jumpTo}
+              />
+              {!activeTour.tour && (
+                <div style={{ position: 'absolute', bottom: 20, left: 20, right: 20, background: 'rgba(var(--bg-rgb),.85)', backdropFilter: 'blur(8px)', borderRadius: 12, padding: '12px 16px', border: '1px solid rgba(var(--text-rgb),.08)' }}>
+                  <div style={{ fontSize: 11, color: 'rgba(var(--text-rgb),.5)', marginBottom: 4 }}>Tap a marker for details</div>
+                  <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }}>
+                    {Object.entries(CATEGORY_COLORS).map(([k, v]) => (
+                      <div key={k} style={{ display: 'flex', alignItems: 'center', gap: 5 }}>
+                        <div style={{ width: 8, height: 8, borderRadius: 4, background: v.marker }} />
+                        <span style={{ fontSize: 11, color: 'rgba(var(--text-rgb),.6)', textTransform: 'capitalize' }}>{k === 'eat' ? 'Eat & Drink' : k}</span>
+                      </div>
+                    ))}
+                  </div>
                 </div>
-              </div>
+              )}
+            </div>
+          ) : view === 'tours' ? (
+            <div style={{ width: '100%', height: '100%', overflowY: 'auto' }}>
+              {previewTour ? (
+                <TourDetail tour={previewTour} onBack={() => setPreviewTour(null)} onStart={() => startTour(previewTour)} />
+              ) : (
+                <TourList tours={tours} onSelect={setPreviewTour} />
+              )}
             </div>
           ) : (
             <div style={{ width: '100%', height: '100%', overflowY: 'auto' }}>
@@ -128,6 +166,16 @@ export default function App() {
                 </div>
               </div>
             </div>
+          )}
+
+          {activeTour.tour && (
+            <TourPlayer
+              tour={activeTour.tour}
+              stopIndex={activeTour.stopIndex}
+              onPrev={activeTour.prev}
+              onNext={activeTour.next}
+              onEnd={activeTour.end}
+            />
           )}
         </div>
 

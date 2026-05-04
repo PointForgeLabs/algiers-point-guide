@@ -29,3 +29,31 @@ collections:
               - { name: image_url, label: Image URL, widget: string, required: false, default: "" }
               - { name: is_featured, label: Featured (Start Here), widget: boolean, default: false }
               - { name: sort_order, label: Sort Order, widget: number, value_type: int, default: 0 }
+
+  - name: tours
+    label: Audio Walking Tours
+    folder: content/tours
+    create: true
+    format: json
+    extension: json
+    identifier_field: slug
+    slug: "{{slug}}"
+    media_folder: "/public/audio/tours/{{slug}}"
+    public_folder: "/audio/tours/{{slug}}"
+    fields:
+      - { name: slug, label: Slug, widget: string, hint: "URL-safe id, e.g. ferry-to-folk-art" }
+      - { name: title, label: Title, widget: string }
+      - { name: description, label: Description, widget: text }
+      - { name: duration, label: Duration, widget: string, hint: "e.g. 35 min" }
+      - { name: cover_image, label: Cover Image, widget: image, required: false }
+      - { name: intro_audio, label: Intro Audio (optional), widget: file, required: false, media_library: { config: { multiple: false } } }
+      - name: stops
+        label: Stops
+        widget: list
+        fields:
+          - { name: name, label: Stop Name, widget: string }
+          - { name: lat, label: Latitude, widget: number, value_type: float, step: 0.000001 }
+          - { name: lng, label: Longitude, widget: number, value_type: float, step: 0.000001 }
+          - { name: audio, label: Audio File, widget: file, media_library: { config: { multiple: false } } }
+          - { name: directions_to_next, label: Directions to Next Stop, widget: text, required: false, hint: "e.g. Walk one block down Pelican Ave toward the levee." }
+          - { name: transcript, label: Transcript (optional), widget: text, required: false }

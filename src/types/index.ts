@@ -20,3 +20,22 @@ export interface Place {
 
 export type PlaceInsert = Omit<Place, 'id' | 'created_at' | 'updated_at' | 'is_active'>;
 export type PlaceUpdate = Partial<PlaceInsert>;
+
+export interface TourStop {
+  name: string;
+  lat: number;
+  lng: number;
+  audio: string;
+  directions_to_next?: string;
+  transcript?: string;
+}
+
+export interface Tour {
+  slug: string;
+  title: string;
+  description: string;
+  duration: string;
+  cover_image?: string;
+  intro_audio?: string;
+  stops: TourStop[];
+}
