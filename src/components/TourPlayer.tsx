@@ -59,11 +59,13 @@ export function TourPlayer({ tour, stopIndex, onPrev, onNext, onEnd }: Props) {
 
   return (
     <div style={{
-      position: 'absolute', bottom: 0, left: 0, right: 0, zIndex: 200,
+      flexShrink: 0,
       background: 'rgba(var(--bg-rgb),.97)', backdropFilter: 'blur(14px)',
       borderTop: '1px solid rgba(var(--text-rgb),.08)',
       padding: '12px 16px 16px',
       animation: 'slideUp .3s cubic-bezier(.16,1,.3,1)',
+      position: 'relative',
+      zIndex: 100,
     }}>
       {stop.audio && (
         <audio

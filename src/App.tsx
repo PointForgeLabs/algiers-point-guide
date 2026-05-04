@@ -72,7 +72,7 @@ export default function App() {
         @keyframes shimmer{0%{background-position:-200% 0}100%{background-position:200% 0}}
       `}</style>
 
-      <div style={{ width: '100%', height: '100vh', background: 'var(--bg)', color: 'var(--text)', fontFamily: "'DM Sans',sans-serif", display: 'flex', flexDirection: 'column', position: 'relative', transition: 'background .25s ease, color .25s ease' }}>
+      <div style={{ width: '100%', height: '100dvh', background: 'var(--bg)', color: 'var(--text)', fontFamily: "'DM Sans',sans-serif", display: 'flex', flexDirection: 'column', position: 'relative', transition: 'background .25s ease, color .25s ease' }}>
 
         {/* Top bar */}
         <div style={{ flexShrink: 0, background: 'rgba(var(--bg-rgb),.95)', backdropFilter: 'blur(12px)', borderBottom: '1px solid rgba(var(--text-rgb),.06)', padding: '12px 20px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', zIndex: 50 }}>
@@ -98,7 +98,7 @@ export default function App() {
           </div>
         </div>
 
-        {view === 'list' && <CategoryStrip active={activeCategory} onChange={setActiveCategory} counts={catCounts} />}
+        {(view === 'list' || view === 'map') && <CategoryStrip active={activeCategory} onChange={setActiveCategory} counts={catCounts} />}
 
         {/* Content */}
         <div style={{ flex: 1, overflow: 'hidden', position: 'relative' }}>
@@ -168,16 +168,17 @@ export default function App() {
             </div>
           )}
 
-          {activeTour.tour && (
-            <TourPlayer
-              tour={activeTour.tour}
-              stopIndex={activeTour.stopIndex}
-              onPrev={activeTour.prev}
-              onNext={activeTour.next}
-              onEnd={activeTour.end}
-            />
-          )}
         </div>
+
+        {activeTour.tour && (
+          <TourPlayer
+            tour={activeTour.tour}
+            stopIndex={activeTour.stopIndex}
+            onPrev={activeTour.prev}
+            onNext={activeTour.next}
+            onEnd={activeTour.end}
+          />
+        )}
 
         {selectedPlace && <DetailSheet place={selectedPlace} onClose={() => setSelectedPlace(null)} />}
       </div>
