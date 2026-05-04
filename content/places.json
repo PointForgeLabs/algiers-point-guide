@@ -9,7 +9,7 @@
       "sort_order": 1,
       "address": "141 Delaronde St",
       "type": "Pizza",
-      "description": "Wood-fired Neapolitan pizza with a blazing hot oven producing beautiful crusts. Family-friendly with a bar in the back. First spot you see off the ferry.",
+      "description": "Wood fired Neapolitan pizza with a blazing hot oven producing beautiful crusts. Family friendly with a bar in the back. One of the first spots you see off the ferry.",
       "category": "eat",
       "lat": 29.95217
     },
@@ -22,7 +22,7 @@
       "sort_order": 2,
       "address": "347 Verret St",
       "type": "Cafe & Brunch",
-      "description": "Cheerful neighborhood coffeehouse serving French and Cajun-inspired fare for breakfast and lunch. Local art on the walls, all for sale.",
+      "description": "Cheerful neighborhood coffeehouse serving French and Cajun inspired fare for breakfast and lunch. Local art on the walls, all for sale.",
       "category": "eat",
       "lat": 29.95209
     },
@@ -35,7 +35,7 @@
       "sort_order": 3,
       "address": "310 Pelican Ave",
       "type": "Coffee",
-      "description": "New Orleans-based roaster with a cafe that feels like the neighborhood's living room. Great espresso and pastries.",
+      "description": "New Orleans based roaster with a cafe that feels like the neighborhood's living room. Great espresso and pastries.",
       "category": "eat",
       "lat": 29.951908999405727
     },
@@ -48,7 +48,7 @@
       "sort_order": 5,
       "address": "446 Pelican Ave",
       "type": "Tacos",
-      "description": "All-outdoor taco spot in a converted gas station. Try the chicken turmeric adobo or red chili pork. Make anything deluxe for a dollar.",
+      "description": "All outdoor taco spot in a converted gas station. ",
       "category": "eat",
       "lat": 29.95328
     },
@@ -125,8 +125,8 @@
       "name": "Appetite Repair Shop",
       "sort_order": 11,
       "address": "Algiers Point",
-      "type": "Pop-up Kitchen",
-      "description": "Legendary neighborhood pop-up. Follow the Facebook group for the rotating menu. Venmo only. A true hidden gem.",
+      "type": "Pop up Kitchen",
+      "description": "Legendary neighborhood pop up. Follow the Facebook group for the rotating menu. Venmo only. A true hidden gem.",
       "category": "eat",
       "lat": 29.95199
     },
@@ -152,7 +152,7 @@
       "sort_order": 13,
       "address": "531 Verret St",
       "type": "Glass Art Gallery",
-      "description": "Artist Mark Rosenbaum's studio in a restored 1930s art deco theater. Watch glass being blown and 'blow your own' on select days.",
+      "description": "Artist Mark Rosenbaum's studio in a restored 1930s art deco theater.",
       "category": "shop",
       "lat": 29.951093659962954
     },
@@ -183,19 +183,6 @@
       "lat": 29.95369
     },
     {
-      "walk_time": "1 min",
-      "is_featured": false,
-      "lng": -90.055,
-      "image_url": "/images/places/historical-levee-plaques.jpg",
-      "name": "Historical Levee Plaques",
-      "sort_order": 16,
-      "address": "Mississippi River Levee",
-      "type": "Walking History",
-      "description": "Look down as you walk. Plaques in the pavement tell the story of each spot, from the enslaved Africans' holding area to Jean Lafitte's canal route to Barataria Bay.",
-      "category": "history",
-      "lat": 29.9536
-    },
-    {
       "walk_time": "23 min",
       "is_featured": false,
       "lng": -90.04165463214376,
@@ -204,7 +191,7 @@
       "sort_order": 17,
       "address": "Leboeuf St at the Levee",
       "type": "Art & Museum",
-      "description": "Home of self-taught artist Charles Gillam. A colorful outdoor gallery and museum celebrating folk art and blues heritage.",
+      "description": "Home of self taught artist Charles Gillam. A colorful outdoor gallery and museum celebrating folk art and blues heritage.",
       "category": "history",
       "lat": 29.954067820958535
     },
@@ -220,19 +207,6 @@
       "description": "Enormous Tudor Gothic cathedral with a clock tower and over 75 stained glass windows, several from the Meyer firm of Munich. The site was once used for voodoo dancing and was a Civil War prison camp.",
       "category": "architecture",
       "lat": 29.95185
-    },
-    {
-      "walk_time": "10 min",
-      "is_featured": false,
-      "lng": -90.04996,
-      "image_url": "",
-      "name": "200 Block of Olivier St",
-      "sort_order": 19,
-      "address": "200 Olivier St",
-      "type": "Mixed Styles (1850s-1890s)",
-      "description": "A single block spanning 50 years of architectural styles: Greek Revival, Italianate, Eastlake, Queen Anne, and Creole Cottage. A living textbook of New Orleans building traditions.",
-      "category": "architecture",
-      "lat": 29.95432
     },
     {
       "walk_time": "11 min",
@@ -274,19 +248,6 @@
       "lat": 29.95308
     },
     {
-      "walk_time": "18 min",
-      "is_featured": false,
-      "lng": -90.04601,
-      "image_url": "",
-      "name": "630 Pacific Ave",
-      "sort_order": 23,
-      "address": "630 Pacific Ave",
-      "type": "Shotgun House (1892)",
-      "description": "New Orleans' most famous shotgun house, featured on PBS Television's This Old House in 1991. All rooms arranged in a single row.",
-      "category": "architecture",
-      "lat": 29.94884
-    },
-    {
       "walk_time": "6 min",
       "is_featured": false,
       "lng": -90.05270542894104,
@@ -304,7 +265,7 @@
       "is_featured": false,
       "lng": -90.04143,
       "image_url": "/images/places/river-find-foods.jpg",
-      "name": "River Find Foods",
+      "name": "River Fine Foods",
       "sort_order": 25,
       "address": "Algiers Point",
       "type": "Market",
