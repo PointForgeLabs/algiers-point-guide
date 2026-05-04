@@ -1,0 +1,120 @@
+{
+  "slug": "brooklyn-of-the-south-jazz",
+  "title": "Brooklyn of the South Jazz Tour",
+  "description": "A jazz heritage tour through Algiers Point and Algiers Riverview, focused on the African American musicians and Black churches that shaped New Orleans music. Visit the homes of Henry 'Red' Allen, 'Kid' Thomas Valentine, Peter Bocage, and Manuel Manetta, plus the dance halls and clubs where the sound traveled.",
+  "duration": "70 min",
+  "stops": [
+    {
+      "name": "Manuel Manetta Home",
+      "lat": 29.9513807,
+      "lng": -90.0518498,
+      "audio": "",
+      "directions_to_next": "",
+      "transcript": ""
+    },
+    {
+      "name": "Algiers Fire Station No. 17",
+      "lat": 29.9482947,
+      "lng": -90.0517605,
+      "audio": "",
+      "directions_to_next": "",
+      "transcript": ""
+    },
+    {
+      "name": "Love's Outreach Christian Church (former Folly Theater)",
+      "lat": 29.9485043,
+      "lng": -90.0509798,
+      "audio": "",
+      "directions_to_next": "",
+      "transcript": ""
+    },
+    {
+      "name": "Delcazal Playground (Duverje Cemetery Site)",
+      "lat": 29.949301290458337,
+      "lng": -90.05087119886957,
+      "audio": "",
+      "directions_to_next": "",
+      "transcript": ""
+    },
+    {
+      "name": "Former Sts. John Masonic Temple",
+      "lat": 29.9488247,
+      "lng": -90.0495266,
+      "audio": "",
+      "directions_to_next": "",
+      "transcript": ""
+    },
+    {
+      "name": "Henry Allen Sr. & Henry \"Red\" Allen Home",
+      "lat": 29.9460358,
+      "lng": -90.0503622,
+      "audio": "",
+      "directions_to_next": "",
+      "transcript": ""
+    },
+    {
+      "name": "Charlie Love Home",
+      "lat": 29.9453069,
+      "lng": -90.049976,
+      "audio": "",
+      "directions_to_next": "",
+      "transcript": ""
+    },
+    {
+      "name": "\"Kid\" Thomas Valentine Home",
+      "lat": 29.9470862,
+      "lng": -90.0494544,
+      "audio": "",
+      "directions_to_next": "",
+      "transcript": ""
+    },
+    {
+      "name": "Peter Bocage Home",
+      "lat": 29.9453947,
+      "lng": -90.0493324,
+      "audio": "",
+      "directions_to_next": "",
+      "transcript": ""
+    },
+    {
+      "name": "Greater Providence Baptist Church",
+      "lat": 29.9453587,
+      "lng": -90.0495678,
+      "audio": "",
+      "directions_to_next": "",
+      "transcript": ""
+    },
+    {
+      "name": "Henry \"Red\" Allen Birthplace",
+      "lat": 29.9456416,
+      "lng": -90.0517276,
+      "audio": "",
+      "directions_to_next": "",
+      "transcript": ""
+    },
+    {
+      "name": "Kohlman's Tavern (the Casbah)",
+      "lat": 29.9467073,
+      "lng": -90.0518306,
+      "audio": "",
+      "directions_to_next": "",
+      "transcript": ""
+    },
+    {
+      "name": "Manuel Manetta Birthplace",
+      "lat": 29.950424,
+      "lng": -90.0548139,
+      "audio": "",
+      "directions_to_next": "",
+      "transcript": ""
+    },
+    {
+      "name": "Robert E. Nims Jazz Walk of Fame",
+      "lat": 29.952394893229133,
+      "lng": -90.05519,
+      "audio": "",
+      "directions_to_next": "",
+      "transcript": ""
+    }
+  ]
+}

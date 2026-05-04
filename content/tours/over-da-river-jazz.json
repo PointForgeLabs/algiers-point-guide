@@ -1,0 +1,104 @@
+{
+  "slug": "over-da-river-jazz",
+  "title": "Over da River Jazz Tour",
+  "description": "Algiers musicians of the 1920s called their neighborhood 'over da river' or the 'Brooklyn of the South.' This tour visits the homes of cornetists, pianists, and bandleaders who shaped early jazz, plus the dance halls, masonic temples, and corner bars where they played — ending at the Robert E. Nims Jazz Walk of Fame on the levee.",
+  "duration": "50 min",
+  "stops": [
+    {
+      "name": "Algiers Courthouse (Duverje Plantation Site)",
+      "lat": 29.95369,
+      "lng": -90.05408,
+      "audio": "",
+      "directions_to_next": "",
+      "transcript": ""
+    },
+    {
+      "name": "Emmett Hardy Home",
+      "lat": 29.9537287,
+      "lng": -90.0542314,
+      "audio": "",
+      "directions_to_next": "",
+      "transcript": ""
+    },
+    {
+      "name": "Norman Brownlee Home",
+      "lat": 29.953969,
+      "lng": -90.0517522,
+      "audio": "",
+      "directions_to_next": "",
+      "transcript": ""
+    },
+    {
+      "name": "The Old Point Bar",
+      "lat": 29.95494,
+      "lng": -90.05019,
+      "audio": "",
+      "directions_to_next": "",
+      "transcript": ""
+    },
+    {
+      "name": "Old Masonic Hall",
+      "lat": 29.953115,
+      "lng": -90.0498078,
+      "audio": "",
+      "directions_to_next": "",
+      "transcript": ""
+    },
+    {
+      "name": "Knights of Columbus (Jazz Hall)",
+      "lat": 29.9523042,
+      "lng": -90.0497396,
+      "audio": "",
+      "directions_to_next": "",
+      "transcript": ""
+    },
+    {
+      "name": "Alphonse Picou Home",
+      "lat": 29.9522038,
+      "lng": -90.0519628,
+      "audio": "",
+      "directions_to_next": "",
+      "transcript": ""
+    },
+    {
+      "name": "Pythian Hall Site",
+      "lat": 29.952307,
+      "lng": -90.0520487,
+      "audio": "",
+      "directions_to_next": "",
+      "transcript": ""
+    },
+    {
+      "name": "House of the Rising Sun B&B",
+      "lat": 29.9522866,
+      "lng": -90.0524263,
+      "audio": "",
+      "directions_to_next": "",
+      "transcript": ""
+    },
+    {
+      "name": "\"Professor\" Manuel Manetta Home",
+      "lat": 29.9517316,
+      "lng": -90.053327,
+      "audio": "",
+      "directions_to_next": "",
+      "transcript": ""
+    },
+    {
+      "name": "Martin Behrman House",
+      "lat": 29.9515613,
+      "lng": -90.0539553,
+      "audio": "",
+      "directions_to_next": "",
+      "transcript": ""
+    },
+    {
+      "name": "Robert E. Nims Jazz Walk of Fame",
+      "lat": 29.952394893229133,
+      "lng": -90.05519,
+      "audio": "",
+      "directions_to_next": "",
+      "transcript": ""
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "slug": "historic-algiers-point",
+  "title": "Historic Algiers Point",
+  "description": "Walk the quiet streets of New Orleans' second-oldest neighborhood, settled in 1719 and listed on the National Register of Historic Places. From the 1896 courthouse rebuilt after the Great Fire to a Tudor Gothic church and a former movie theater turned glass-blowing studio, this tour traces three centuries of architecture and life on the Point.",
+  "duration": "60 min",
+  "stops": [
+    {
+      "name": "Algiers Courthouse",
+      "lat": 29.95369,
+      "lng": -90.05408,
+      "audio": "",
+      "directions_to_next": "",
+      "transcript": ""
+    },
+    {
+      "name": "Canal-Commercial Trust & Savings Bank",
+      "lat": 29.95471,
+      "lng": -90.05126,
+      "audio": "",
+      "directions_to_next": "",
+      "transcript": ""
+    },
+    {
+      "name": "Larkin Park",
+      "lat": 29.9547261,
+      "lng": -90.0507639,
+      "audio": "",
+      "directions_to_next": "",
+      "transcript": ""
+    },
+    {
+      "name": "200 Block of Olivier Street",
+      "lat": 29.95432,
+      "lng": -90.04996,
+      "audio": "",
+      "directions_to_next": "",
+      "transcript": ""
+    },
+    {
+      "name": "Hubbell Algiers Point Library",
+      "lat": 29.95308,
+      "lng": -90.04821,
+      "audio": "",
+      "directions_to_next": "",
+      "transcript": ""
+    },
+    {
+      "name": "Mount Olivet Episcopal Church",
+      "lat": 29.953397322499217,
+      "lng": -90.05036977540588,
+      "audio": "",
+      "directions_to_next": "",
+      "transcript": ""
+    },
+    {
+      "name": "Knights of Columbus Home",
+      "lat": 29.9523042,
+      "lng": -90.0497396,
+      "audio": "",
+      "directions_to_next": "",
+      "transcript": ""
+    },
+    {
+      "name": "Rosetree Blown Glass Studio (former \"Algy\" Theater)",
+      "lat": 29.951093659962954,
+      "lng": -90.04897164830093,
+      "audio": "",
+      "directions_to_next": "",
+      "transcript": ""
+    },
+    {
+      "name": "Trinity Evangelical Lutheran Church",
+      "lat": 29.951,
+      "lng": -90.04967,
+      "audio": "",
+      "directions_to_next": "",
+      "transcript": ""
+    },
+    {
+      "name": "McDonogh Park (\"Bermuda Triangle\")",
+      "lat": 29.95161258359743,
+      "lng": -90.05125292550599,
+      "audio": "",
+      "directions_to_next": "",
+      "transcript": ""
+    },
+    {
+      "name": "Holy Name of Mary Church",
+      "lat": 29.95185,
+      "lng": -90.05051,
+      "audio": "",
+      "directions_to_next": "",
+      "transcript": ""
+    },
+    {
+      "name": "Confetti Park",
+      "lat": 29.95291979416701,
+      "lng": -90.05123235575807,
+      "audio": "",
+      "directions_to_next": "",
+      "transcript": ""
+    },
+    {
+      "name": "Barracuda (former Gulf Service Station)",
+      "lat": 29.95328,
+      "lng": -90.05137,
+      "audio": "",
+      "directions_to_next": "",
+      "transcript": ""
+    },
+    {
+      "name": "Martin Behrman House",
+      "lat": 29.9515613,
+      "lng": -90.0539553,
+      "audio": "",
+      "directions_to_next": "",
+      "transcript": ""
+    }
+  ]
+}
